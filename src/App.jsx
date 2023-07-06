@@ -1,5 +1,7 @@
 
 
+
+import Clima from './Componenete/Clima'
 import './App.css'
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
 
   return (
     <>
+    <Clima/>
     </>
   )
 }

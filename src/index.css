@@ -1,1 +1,177 @@
 
+
+
+:root {
+   
+    --header-height: 56px;
+    
+    --text-color: #026eed;
+    --title-color: #56a5f1;
+    --bgligth-0-color: #d5f3ff;
+    --bgligth-100-color: #51b4e8;
+    --bgdark-0-color: #53388f;
+    --bgdark-100-color: #2f2958;
+    --cardligth-0-color: #e5f2ff;
+    --cardligth-97-4-color: #d5f3ff;
+    --bgbotonligth-color: #38a0d8;
+    --bgbotondark-color: #7d69f1;
+    --title-principal: white;
+  
+   
+    --body-font: "Lato", sans-serif;
+    --T1: 95px;
+    --T2: 23px;
+    --T3: 18px;
+    --T4: 16px;
+    --T5: 12px;
+  
+   
+    --sp-0-5: 0.5rem;
+    --sp-0-75: 0.75rem;
+    --sp-1: 1rem;
+    --sp-1-5: 1.5rem;
+    --sp-2: 2rem;
+    --sp-2-5: 2.5rem;
+    --sp-3: 3rem;
+  
+   
+    --z-fixed: 1;
+    --z-modal: 2;
+}
+
+body{
+    background-color: #51b4e8;
+}
+
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font);
+}
+
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: hsl(0, 0%, 74%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 17%);
+}
+
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.section {
+  padding: var(--sp-2) 0 var(--sp-1);
+}
+
+.title {
+    text-align: left; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: var(--normal-font);
+    color: var(--title-principal);
+    font-weight: bold;
+  }
+
+
+  .weather_card {
+    position: relative;
+    background: radial-gradient(var(--bgligth-0-color) 0%, var(--bgligth-100-color) 97.4%);
+    filter: drop-shadow(0px 4.85px 4.85px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 400px;
+    margin-top: 50px;
+  }
+
+
+  .temperature {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--text-color);
+    margin: 0;
+    position: relative;
+    z-index: 1; 
+  }
+  
+  .Climate_Image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .environmental_container {
+    text-align: left;
+    font-size: 0.8rem;
+    color: var(--title-color);
+  }
+  
+  .environmental_container p {
+    margin-bottom: 5px;
+  }
+  
+  .bottom_row {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  
+  .city_container {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .sky_status {
+    
+    margin-top: 11px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+  
+  .units_button {
+    width: 178px;
+    height: 38px;
+    background-color: var(--bgbotonligth-color);
+    filter: drop-shadow(0px 4.85px 4.85px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    color: var(--text-temperature);
+    margin: 0 auto; 
+    display: block; 
+  }
+  
+  .group {
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto; 
+    margin-top: 2%;
+  }
+
+  .fc{
+    color: #2f2958;
+    text-align: center;
+  }
+
+
+
+
